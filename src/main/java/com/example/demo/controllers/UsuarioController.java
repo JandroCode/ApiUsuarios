@@ -36,7 +36,7 @@ public class UsuarioController {
 		return usuarioDAO.findAll();
 	}
 	
-	@GetMapping("/{id}")
+	@GetMapping("/usuario/{id}")
 	public Usuario getUser(@PathVariable(name = "id")Long id) {
 		return usuarioDAO.findById(id).orElse(null);
 	}
